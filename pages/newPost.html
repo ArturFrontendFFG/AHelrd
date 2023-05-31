@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/bbbac4619b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../styles/newPost.css">
+	<link rel="stylesheet" href="../styles/custom-select.css">
+	<link rel="stylesheet" href="../styles/def.css">
+
+	<title>Создание публикации - AHelrd</title>
+</head>
+
+<body>
+	<div class="logo">
+		<div class="logo__container container">
+			<a class="logo__link" href="../index.html">
+				AHelrd
+			</a>
+		</div>
+	</div>
+	<header class="header">
+		<div class="header__container container">
+			<nav class="content">
+				<ul class="content__list">
+					<li class="content__item content__item_active">
+						<a class="content__link" href="#">
+							Все потоки
+						</a>
+					</li>
+					<li class="content__item">
+						<a class="content__link" href="#">
+							Все потоки
+						</a>
+					</li>
+					<li class="content__item">
+						<a class="content__link" href="#">
+							Все потоки
+						</a>
+					</li>
+					<li class="content__item">
+						<a class="content__link" href="#">
+							Все потоки
+						</a>
+					</li>
+					<li class="content__item">
+						<a class="content__link" href="#">
+							Все потоки
+						</a>
+					</li>
+					<li class="content__item">
+						<a class="content__link" href="#">
+							Все потоки
+						</a>
+					</li>
+				</ul>
+
+				<div class="profile">
+					<div class="profile__content">
+						<button class="profile__btn profile__btn_log" onclick="window.location = 'pages/logIn.html'">
+							Войти
+						</button>
+						<button class="profile__btn profile__btn_reg"
+							onclick="window.location   = 'pages/registr.html'">Регистрация
+						</button>
+					</div>
+
+					<i class="fa-regular fa-heart" onclick="window.location = 'pages/favorite.html'"></i>
+
+					<i class="fa-regular fa-user"></i>
+
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main__container container">
+			<div class="wrapper">
+				<form class="new-post">
+					<input class="new-post__title" type="text" placeholder="Заголовок" required>
+					<textarea class="new-post__text" id="text" placeholder="Текст публикации" required></textarea>
+					<hr>
+					<button class="new-post__next-setting" disabled>
+						Далее к настройкам
+					</button>
+				</form>
+
+				<form class="setting" style="display: none">
+					<h3 class="setting__title title">Настройки публикации</h3>
+					<hr>
+
+					<div class="setting__publication">
+						<p class="setting__publication-text min-title">
+							<span>*</span> Тип публикации
+						</p>
+						<div class="type-publication">
+							<input type="radio" id="post" name="type-publication" value="post" checked required>
+							<label for="post">Пост</label>
+
+							<input type="radio" id="dewey" name="type-publication" value="dewey" required>
+							<label for="dewey">Новость</label>
+
+							<input type="radio" id="louie" name="type-publication" value="louie" required>
+							<label for="louie">Статьи</label>
+						</div>
+					</div>
+
+					<p class="min-title">
+						<span>*</span> Теги
+					</p>
+					<div class="select-container tags"></div>
+					<p class="min-title">
+						<span>*</span> Категория
+					</p>
+					<div class="select-container category"></div>
+					<div class="difficulty">
+						<p class="min-title">
+							Уровень сложности
+						</p>
+
+						<input type="radio" id="no-difficulty" name="difficulty" required>
+						<label for="no-difficulty">
+							Не указан
+						</label>
+						<input type="radio" id="elementary" name="difficulty" required>
+						<label for="elementary">
+							Простой
+						</label>
+						<input type="radio" id="medium" name="difficulty" required>
+						<label for="medium">
+							Средний
+						</label>
+						<input type="radio" id="hard" name="difficulty" required>
+						<label for="hard">
+							Сложный
+						</label>
+					</div>
+
+					<textarea class="setting__min-text" id="text" placeholder="Текст публикации" required></textarea>
+
+					<p class="setting__prompt">
+						Рекомендуем от 100 до 2000 символов, максимально допустимое количество - 3000 символов. В ленте
+						можно размещать только текст и ссылки.
+					</p>
+
+					<p class="min-title">
+						<span>
+							*
+						</span>
+						Текст кнопки «Читать далее»
+					</p>
+					<input class="input" type="text" placeholder="Читать далее" required>
+
+					<hr>
+
+					<button class="btn to-moderate">
+						Отправить на модерацию
+					</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<script src="../js/newPost.js"></script>
+	<script src="../js/modules/CustomSelect.js"></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <script src="https://kit.fontawesome.com/bbbac4619b.js" crossorigin="anonymous"></script> <link rel="stylesheet" href="../styles/newPost.css"> <link rel="stylesheet" href="../styles/def.css"> <title>Создание публикации - AHelrd</title></head><body> <div class="logo"> <div class="logo__container container"> <a class="logo__link" href="/index.html"> AHelrd </a> </div></div><header class="header"> <div class="header__container container"> <nav class="content"> <ul class="content__list"> <li class="content__item content__item_active"> <a class="content__link" href="#"> Все потоки </a> </li><li class="content__item"> <a class="content__link" href="#"> Все потоки </a> </li><li class="content__item"> <a class="content__link" href="#"> Все потоки </a> </li><li class="content__item"> <a class="content__link" href="#"> Все потоки </a> </li><li class="content__item"> <a class="content__link" href="#"> Все потоки </a> </li><li class="content__item"> <a class="content__link" href="#"> Все потоки </a> </li></ul> <div class="profile"> <div class="profile__content"> <button class="profile__btn profile__btn_log" onclick="window.location='pages/logIn.html'">Войти</button> <button class="profile__btn profile__btn_reg" onclick="window.location='pages/registr.html'">Регистрация</button> </div><i class="fa-regular fa-heart" onclick="window.location='pages/favorite.html'"></i> <i class="fa-regular fa-user"></i> </div></nav> </div></header> <main class="main"> <div class="main__container container"> <div class="wrapper"> <form class="new-post"> <input class="new-post__title" type="text" placeholder="Заголовок" required> <textarea class="new-post__text" id="text" placeholder="Текст публикации" required></textarea> <hr> <button class="new-post__next-setting" disabled> Далее к настройкам </button> </form> <form class="setting" style="display: none"> <h3 class="setting__title title">Настройки публикации</h3> <hr> <div class="setting__publication"> <p class="setting__publication-text min-title"> <span>*</span> Тип публикации </p><div class="type-publication"> <input type="radio" id="post" name="type-publication" value="post" checked required> <label for="post">Пост</label> <input type="radio" id="dewey" name="type-publication" value="dewey" required> <label for="dewey">Новость</label> <input type="radio" id="louie" name="type-publication" value="louie" required> <label for="louie">Статьи</label> </div></div><p class="min-title"> <span>*</span> Теги </p><div class="drop-menu"> <input class="drop-menu__inp input" type="text" placeholder="Выберите категории" readonly required> <div class="drop-menu__content"> <div class="drop-menu__block"> Java </div><div class="drop-menu__block"> Python </div><div class="drop-menu__block"> C++ </div><div class="drop-menu__block"> JavaScript </div><div class="drop-menu__block"> Frontend </div><div class="drop-menu__block"> Backend </div></div></div><p class="min-title"> <span>*</span> Категория </p><div class="drop-menu"> <input class="drop-menu__inp input" type="text" placeholder="Выберите категории" readonly required> <div class="drop-menu__content"> <div class="drop-menu__block"> Научпоп </div><div class="drop-menu__block"> Искуственный интеллект </div><div class="drop-menu__block"> Новости </div><div class="drop-menu__block"> IT-Компании </div><div class="drop-menu__block"> Програмирование </div><div class="drop-menu__block"> Мобильная разработка </div></div></div><div class="difficulty"> <p class="min-title"> Уровень сложности </p><input type="radio" id="no-difficulty" name="difficulty" required> <label for="no-difficulty"> Не указан </label> <input type="radio" id="elementary" name="difficulty" required> <label for="elementary"> Простой </label> <input type="radio" id="medium" name="difficulty" required> <label for="medium"> Средний </label> <input type="radio" id="hard" name="difficulty" required> <label for="hard"> Сложный </label> </div><textarea class="setting__min-text" id="text" placeholder="Текст публикации" required></textarea> <p class="setting__prompt"> Рекомендуем от 100 до 2000 символов, максимально допустимое количество - 3000 символов. В ленте можно размещать только текст и ссылки. </p><p class="min-title"> <span> * </span> Текст кнопки «Читать далее» </p><input class="input" type="text" placeholder="Читать далее" required> <hr> <button class="btn to-moderate"> Отправить на модерацию </button> </form> </div></div></main> <script src="../js/newPost.js"></script></body></html> -->
