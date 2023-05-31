@@ -1,0 +1,191 @@
+.title {
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.625rem;
+  margin: 0 0 12px;
+  padding: 0 0 24px;
+  text-align: left;
+  color: #000;
+}
+
+.min-title {
+  color: #000;
+  font-size: 15px;
+}
+.min-title span {
+  color: #ff8d85;
+}
+
+.input {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.new-post {
+  margin-top: 25px;
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.new-post__title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+.new-post__title::-moz-placeholder {
+  opacity: 0.7;
+}
+.new-post__title::placeholder {
+  opacity: 0.7;
+}
+.new-post__text {
+  font-size: 19px;
+  height: 45vh;
+  width: 100%;
+}
+.new-post__next-setting {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #ccc;
+}
+.new-post__next-setting:disabled {
+  cursor: no-drop;
+}
+.new-post__next-setting.submit {
+  border: 1px solid #548eaa;
+  color: #548eaa;
+  transition: 0.3s ease;
+}
+.new-post__next-setting.submit:hover {
+  color: #fff;
+  background-color: #548eaa;
+}
+
+.setting {
+  margin-top: 25px;
+  padding: 30px 30px;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+.setting hr {
+  height: 1px;
+  width: 100%;
+}
+.setting__publication-content {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.setting__publication-block {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: #548eaa;
+  cursor: pointer;
+  padding: 0px 18px;
+  height: 40px;
+  border-radius: 2.5px;
+  text-align: center;
+  border: 1.5px solid #77a8d0;
+  color: #4d80aa;
+}
+.setting .type-publication {
+  margin-top: 20px;
+}
+.setting .type-publication input[type=radio] {
+  display: none;
+}
+.setting .type-publication input[type=radio]:checked + label {
+  color: #fff;
+  background-color: #4d80aa;
+}
+.setting .type-publication label {
+  transition: 0.3s ease;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid #548eaa;
+}
+.setting .min-title {
+  margin: 20px 0;
+}
+.setting .drop-menu {
+  margin-top: 10px;
+  width: 100%;
+}
+.setting .drop-menu__inp {
+  cursor: pointer;
+  margin: 0;
+}
+.setting .drop-menu__content {
+  border: 1px solid #ccc;
+  border-top: 0;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  padding: 10px 30px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 4px 4px;
+}
+.setting .drop-menu__content.active {
+  display: block;
+}
+.setting .drop-menu__block {
+  color: #548eaa;
+  cursor: pointer;
+  padding: 10px;
+}
+.setting .drop-menu__block:hover {
+  background-color: #548eaa;
+  color: #fff;
+}
+.setting .difficulty .min-title {
+  margin-bottom: 15px;
+}
+.setting .difficulty label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.setting__min-text {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 30vh;
+}
+.setting__prompt {
+  color: #777;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  margin: 9px 0 0;
+}
+.setting hr {
+  margin: 30px 0 40px 0;
+  opacity: 0.7;
+}
+.setting .to-moderate {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+body {
+  padding-bottom: 40vh;
+}/*# sourceMappingURL=newPost.css.map */
