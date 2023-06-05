@@ -71,14 +71,12 @@ button {
 }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   font-size: 0px;
 }
 
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 article > * + * {
@@ -229,4 +227,4 @@ article > * + * {
   left: 50%;
   font-size: 13px;
   transform: translate(-50%, -50%);
-}/*# sourceMappingURL=def.css.map */
+}

@@ -1,1 +1,83 @@
-/*# sourceMappingURL=profile.css.map */
+.wrapper {
+  padding: 40px 0;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.wrapper .title-profile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #548eaa;
+  font-size: 28px;
+}
+.wrapper .sidebar {
+  padding: 15px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  margin-top: 15px;
+  width: 30%;
+  background-color: #548eaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0px;
+  color: #fff;
+}
+.wrapper .sidebar__avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.wrapper .sidebar__change-file {
+  transition: 0.3s ease;
+  color: #fff;
+}
+.wrapper .sidebar__change-file:hover {
+  color: #d1dce1;
+}
+.wrapper .sidebar__about-title {
+  margin: 24px 0 9px 0;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.wrapper .sidebar__about-title:hover {
+  color: #d1dce1;
+}
+.wrapper .sidebar__about-me {
+  padding: 0 23px;
+  width: 310px;
+  text-align: center;
+}
+.wrapper .about-user {
+  padding: 25px 15px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  margin-top: 15px;
+  width: 60%;
+  background-color: #548eaa;
+}
+.wrapper .about-user__title {
+  margin: 9px 0 6px 0;
+  font-weight: 500;
+}
+.wrapper .about-user__data-txt {
+  font-weight: 300;
+}
+.wrapper .about-user__text {
+  margin-top: 17px;
+  color: #fff;
+  width: 100%;
+  height: 35vh;
+  padding: 15px 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.4);
+}
+.wrapper .about-user__text::placeholder {
+  color: #fff;
+}

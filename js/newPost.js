@@ -96,14 +96,14 @@ export default function newPostModule(){
                     liOption.classList.remove( "selected" );
                 } );
                 target.classList.add( "selected" );
-                dataPost.tags = this.#currentSelectedOption;
-                dataPost.category = this.#currentSelectedOption;
                 if ( this.#isMulti ) {
                     selectButtonText.value += `${ targetOption.text },` 
-                    console.log(selectButtonText.value);
+                    dataPost.tegs = this.#currentSelectedOption
                 } else {
                     selectButtonText.value = targetOption.text
+                    dataPost.category = this.#currentSelectedOption
                 }
+                console.log(dataPost);
                 this.#ulContainer.classList.remove( "active" );
             }
         }

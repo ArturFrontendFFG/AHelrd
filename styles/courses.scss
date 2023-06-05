@@ -5,7 +5,6 @@
   gap: 20px;
   justify-content: space-between;
 }
-
 .info-block {
   width: 70%;
   max-height: 500px;
@@ -44,65 +43,73 @@
   background-color: #fff;
   min-height: 500px;
   color: #000;
-}
-.sidebar .accordion__body {
-  height: 0px;
-  overflow: hidden;
-  transition: 0.3s ease;
-}
-.sidebar .accordion__glave {
-  padding: 10px 15px;
-  background-color: #e1e1e1;
-  display: flex;
-  align-items: center;
-  color: #636363;
-  fill: #636363;
-}
-.sidebar .accordion__glave svg {
-  height: 1rem;
-  width: 1rem;
-  margin: 0 0 0 7px;
-}
-.sidebar .accordion__name-courses {
-  cursor: pointer;
-  padding: 5px 15px;
-  background-color: #e1e1e1;
-  display: flex;
-  align-items: center;
-  color: #636363;
-  fill: #636363;
-}
-.sidebar .accordion__text {
-  margin: 0 7px;
-}
-.sidebar .accordion .btn-courses {
-  cursor: pointer;
-  padding: 8px 30px;
-  border-bottom: 1px solid rgba(204, 204, 204, 0.8);
-}
-.sidebar .accordion .btn-courses__material {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-}
-.sidebar .accordion .btn-courses__material svg {
-  width: 14px;
-  height: 14px;
-}
-.sidebar .accordion .btn-courses__material {
-  font-size: 11px;
-}
-.sidebar .accordion .btn-courses__info-text {
-  margin-top: 9px;
-  font-weight: 400;
-  font-size: 16px;
-}
-.sidebar .accordion .btn-courses.active {
-  background-color: #69B6FD;
-  color: #fff;
-  fill: #fff;
-}
+    
 
+  .accordion {
+    &__body{
+        height: 0px;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    &__glave {
+      padding: 10px 15px;
+      background-color: #e1e1e1;
+      display: flex;
+      align-items: center;
+      color: #636363;
+      fill: #636363;
+
+      svg {
+        height: 1rem;
+        width: 1rem;
+        margin: 0 0 0 7px;
+      }
+    }
+    &__name-courses {
+      cursor: pointer;
+      padding: 5px 15px;
+      background-color: #e1e1e1;
+      display: flex;
+      align-items: center;
+      color: #636363;
+      fill: #636363;
+    }
+    &__text {
+      margin: 0 7px;
+    }
+    .btn-courses{
+        cursor: pointer;
+        padding: 8px 30px;
+        border-bottom: 1px solid #cccc;
+
+        &__material{
+            display: flex;
+            gap: 6px;
+            align-items: center;
+
+            svg{
+                width: 14px;
+                height: 14px;
+            }
+        }
+        &__material{
+            font-size: 11px;
+        }
+        &__info-text{
+            margin-top: 9px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    &.active{
+        background-color: #69B6FD;
+        color: #fff;
+        fill: #fff;
+    }
+
+    }
+  }
+}
 /* .sidebar {
     width: 30%;
     max-height: 580px;
@@ -115,7 +122,7 @@
     overflow:scroll;
     overflow-x: auto;
     overflow-y: scroll;
-
+    
 }
 
 .accordion {

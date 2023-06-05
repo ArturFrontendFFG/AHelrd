@@ -1,15 +1,20 @@
 export default function coursesModule() {
-    let acc = document.getElementsByClassName("accordion");
-    for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
+    let accordions = document.querySelectorAll(`.accordion`);
+    accordions.forEach(accordion => {
+       const accordionHeader = accordion.querySelector(`.accordion__name-courses`);
+       const accordionBody = accordion.querySelector(`.accordion__body`);
 
-            let panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
+       accordionHeader.addEventListener(`click`, () => {
+        const heightAccordionBody = accordionBody.scrollHeight;
+        accordionHeader.classList.toggle(`active`);
+        if(accordionHeader.classList.contains(`active`)){
+            accordionBody.style.height = heightAccordionBody + 'px'; 
+            accordionHeader.children[1].style.transform = 'rotate(180deg)'
+        }else{
+            accordionBody.style.height = '0px'; 
+            accordionHeader.children[1].style.transform = 'rotate(0deg)'
+
+        }   
+       })
+    })
 }
