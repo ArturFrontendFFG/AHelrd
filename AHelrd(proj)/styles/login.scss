@@ -1,15 +1,12 @@
-.wrapper{
-    padding-bottom: 40px;
-}
+
 .registration{
     box-sizing: content-box;
-    padding: 30px 40px;
+    padding: 20px 40px;
     background-color: #fff;
     max-width: 35%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 30px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
     border-radius: 4px;
@@ -17,9 +14,7 @@
     &__title{
         color: #262626;
         letter-spacing: .1rem;
-        font-size: 35px;
-        font-family: 'Jost', sans-serif;
-       
+        font-size: 23px;
     }
     &__box{
         display: flex;
@@ -39,17 +34,12 @@
                 color: #548eaa;
             }
         }
-        ::placeholder{
-            color: rgb(212, 212, 212);
-            font-family: 'Jost', sans-serif;
-            font-size: 16px;
-        }
     }
     &__inp{
         margin-top: 10px;
         width: 100%;
-        border-bottom: 1px solid #ccc;
-        padding: 10px 15px 10px 0;
+        border: 1px solid #ccc;
+        padding: 10px
     }
     &__btn{
         padding: 15px 30px;
@@ -58,12 +48,10 @@
     }
 }
 .if-login{
-    max-width: 100%;    
-    font-family: 'Jost', sans-serif;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px 0px;
-    font-size: 17px;
     box-sizing: content-box;
     color: #000;
     text-align: center;
