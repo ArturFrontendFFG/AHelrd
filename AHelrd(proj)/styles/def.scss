@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-rendering: optimizeSpeed;
+}
+
+body {
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    background: #f4f4f4;
+}
+
+ul,
+ol,
+ul[class],
+ol[class] {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    object-fit: cover;
+    font-size: 0px;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+article>*+* {
+    margin-top: 1em;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.text {
+    color: #111;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #007aff;
+    color: #007aff;
+    transition: .3s ease;
+
+    &:hover {
+        background: #548eaa;
+        color: #fff;
+    }
+}
+
+.logo {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    background-color: #303b44;
+    transition: .3s ease;
+    padding: 9px 0;
+    &.hide{
+        transform: translateY(-50px);
+    }
+
+    &__link {
+        font-size: 28px;
+    }
+}
+.header {
+    transition: .3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 15px 0;
+    position: sticky;
+    z-index: 9999;
+    background-color: #fff;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__item {
+            color: #ccc;
+            transition: ease .3s all;
+            font-size: 15px;
+
+            &_active {
+                color: #000;
+            }
+
+            &:hover {
+                color: #007aff;
+            }
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &__content {
+                transform: scale(0);
+                padding: 15px;
+                box-shadow: 0 0 12px rgba(0, 0, 0, .16);
+                border-radius: 5px;
+                position: absolute;
+                top: -14px;
+                left: -244px;
+                background-color: #fff;
+                transition: .3s ease;
+
+
+                &.active {
+                    transform: scale(1);
+                    top: 35px;
+                    left: -300px;
+                }
+            }
+            &__content.active ~ .fa-user{
+                color: #007aff;
+            }
+
+            &__btn {
+                padding: 10px 30px;
+                border-radius: 5px;
+
+                &_log {
+                    color: #548eaa;
+                    background: transparent;
+                    border: 1px solid #548eaa;
+                    margin-right: 10px;
+                }
+
+                &_reg {
+                    background: #548eaa;
+                    color: #fff;
+                }
+            }
+
+            .fa-user,
+            .fa-pencil,
+            .fa-heart {
+                color: #000;
+                font-size: 28px;
+                transition: ease .3s all;
+                cursor: pointer;
+
+                &:hover {
+                    color: #007aff;
+                }
+            }
+            .fa-heart{
+                font-size: 32px;
+            }
+
+            .fa-user {
+                margin:0 15px;
+            }
+
+            &__block {
+                position: relative;
+            }
+
+            &__counter {
+                pointer-events: none;
+                color: black;
+                position: absolute;
+                top: 49%;
+                left: 50%;
+                font-size: 13px;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

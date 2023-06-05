@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bbbac4619b.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="styles/def.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/custom-select.css">
+    <title>AHelrd</title>
+</head>
+
+<body>
+    
+    <div class="logo">
+        <div class="logo__container container">
+            <a class="logo__link" href="index.html">
+                AHelrd
+            </a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__container container">
+            <nav class="content">
+                <ul class="content__list">
+                
+                    <li class="content__item content__item_active">
+                        <a class="content__link" href="#posts">
+                            Посты
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__link" href="#profile">
+                            Профиль
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__link" href="#">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__link" href="#">
+                            Хабы
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__link" href="#">
+                            Авторы
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__link" href="#">
+                            Компании
+                        </a>
+                    </li>
+                </ul>
+                <div class="profile">
+                    <div class="profile__content">
+                        <button class="profile__btn profile__btn_log" onclick="location.hash = '#login'">Войти</button>
+                        <button class="profile__btn profile__btn_reg"
+                            onclick="location.hash = '#registration'">Регистрация</button>
+                    </div>
+                    <i class="fa-solid fa-pencil" onclick="location.hash = '#new'"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <div class="profile__block">
+                        <div class="profile__counter">0</div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="main__container container">
+            <div class="wrapper">
+            </div>
+        </div>
+    </main>
+    <script src="js/def.js" type="module"></script>
+</body>
+</html>
