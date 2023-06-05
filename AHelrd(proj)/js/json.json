@@ -1,0 +1,16 @@
+[
+    {   
+        "id": 2,
+        "username": "Ivan",
+        "email": "342342",
+        "password": "*******" ,
+        "token" : "asjkdfhjaksdfhjkwasdfasdfsdfhefsjhdf"
+    },
+    {
+        "id": 2,
+        "username": "Ivan",
+        "email": "342342",
+        "password": "*******",
+        "token" : "asjkdfhjaksdfhjkwhefsjhdf"
+    }
+]
