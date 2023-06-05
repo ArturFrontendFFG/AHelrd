@@ -5,7 +5,7 @@ const header = document.querySelector('.header');
 const logo = document.querySelector('.logo');
 let lastScroll = 0;
 const defaultOffset = 40;
-main.style.marginTop = `${header.clientHeight + 10}px`;
+main.style.marginTop = `${header.clientHeight + 35}px`;
 
 const headerTop = () => {
   header.style.top = `${logo.clientHeight}px`;

@@ -14,6 +14,7 @@ export default function profileModule() {
         };
         reader.readAsDataURL(event.target.files[0]);
       }
+      
     });
   }
   

@@ -4,10 +4,6 @@ export default async function registrationModule(){
     const email = document.querySelector(`#email`);
     const nikname = document.querySelector(`#nikname`);
     let data = {}
-    password.addEventListener('input', () => {
-        const value = password.value.trim();
-        value.length < 6 ? password.setCustomValidity('Минимальная длина - 6 символов') : password.setCustomValidity('');
-    });
     if (confirmPassword !== null) {
         const btn = document.querySelector(`.registration__btn`);
         confirmPassword.addEventListener(`input`, () => {

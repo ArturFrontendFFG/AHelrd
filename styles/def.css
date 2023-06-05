@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 *,
 *::before,
 *::after {
@@ -114,6 +115,18 @@ article > * + * {
   color: #fff;
 }
 
+.about-us__list {
+  display: flex;
+  column-gap: 20px;
+}
+.about-us__link {
+  transition: ease 0.3s all;
+  font-family: "Jost", sans-serif;
+}
+.about-us__link:hover {
+  color: #007aff;
+}
+
 .logo {
   position: fixed;
   width: 100%;
@@ -128,6 +141,12 @@ article > * + * {
 }
 .logo__link {
   font-size: 28px;
+  font-family: "Jost", sans-serif;
+}
+.logo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header {
@@ -147,11 +166,12 @@ article > * + * {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-family: "Jost", sans-serif;
 }
 .header .content__item {
   color: #ccc;
   transition: ease 0.3s all;
-  font-size: 15px;
+  font-size: 16px;
 }
 .header .content__item_active {
   color: #000;
@@ -201,7 +221,7 @@ article > * + * {
 .header .content .profile .fa-pencil,
 .header .content .profile .fa-heart {
   color: #000;
-  font-size: 28px;
+  font-size: 22px;
   transition: ease 0.3s all;
   cursor: pointer;
 }
@@ -211,7 +231,7 @@ article > * + * {
   color: #007aff;
 }
 .header .content .profile .fa-heart {
-  font-size: 32px;
+  font-size: 25px;
 }
 .header .content .profile .fa-user {
   margin: 0 15px;
